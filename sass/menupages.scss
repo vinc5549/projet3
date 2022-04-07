@@ -1,0 +1,105 @@
+// A LA FRANCAISE //
+.logo2 
+{
+    height: 24px;
+}
+.arrow
+{
+    padding-top:12%;
+}
+
+.container-logo2
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 3%;
+    padding-left: 9%;
+    width: 60%;
+}
+
+.menufrancais
+{
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.img-section
+{
+    display:flex;
+}
+
+.imgfrancaise
+{
+    width:100%;
+}
+
+.frenchheart
+{
+    position:absolute;
+    right: 20%;
+    padding-top: 5%;
+}
+
+.frenchmenu
+{
+    display:flex;
+    padding-left:5%;
+    padding-bottom:5%;
+    padding-right: 5%;
+    padding-top:4%;
+}
+
+.titlefrancaise
+{
+    font-family: "Shrikhand";
+}
+
+.entry
+{
+    display:flex;
+    border-bottom: solid 3.5px #99E2D0;
+    width: 11%;
+    height: 22px;
+    margin-left: 5%;
+}
+
+.entryfrancaise
+{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 3%;
+}
+
+.frenchentry
+{
+    background-color: white;
+    border-radius: 15px;
+    margin: 4%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center
+}
+
+.price
+{
+    height: 30%;
+}
+
+.titleentry
+{
+    margin:0;
+    padding-bottom: 1.5%;
+}
+
+.validation-logo
+{
+    overflow: hidden;
+}

@@ -1,0 +1,585 @@
+ body
+{
+    font-family: "Roboto","Shrikhand";
+    cursor:pointer;
+}
+
+img
+{
+    object-fit: cover;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-logo
+{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+.logo
+{
+    height: 22px;
+}
+
+
+
+.reservation
+{
+    display: flex;
+    justify-content: center;
+    background-color: #e4e4e4;
+    height: 45px;
+    box-shadow: inset 0 3px #cccccc;
+}
+
+
+
+.paris
+{
+    padding-right:12px;
+    display: flex;
+    align-items: center;
+    color: #555454;
+    font-size: 14px;
+}
+
+
+
+.belleville
+{
+    display: flex;
+    align-items: center;
+    color: #555454;
+    font-size: 14px;
+    font-weight: bolder;
+    padding-right: 22px;
+}
+
+
+
+.reserver
+{
+    display:flex;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    justify-content: flex-start;
+}
+
+
+
+.reservationmenu
+{
+    display:flex;
+    font-size: 21px;
+    width: 245px;
+    text-align: center;
+    padding-top: 5%;
+}
+@media screen and (min-width:992px)
+{
+    .reservationmenu
+    {
+        padding-top:3%;
+    }
+}
+
+
+.decouverte
+{
+    display:flex;
+    text-align: center;
+    width: 350px;
+    padding-bottom: 8%;
+    color:#747373;
+}
+@media screen and (min-width:768px)
+{
+    .decouverte
+    {
+        padding-bottom:4%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .decouverte
+    {
+        padding-bottom:2%;
+    }
+}
+
+
+
+.explorer
+{
+    display:flex;
+    font-size:16px;
+    border-top: solid #e0e0e0 2px;
+    border-right: solid #e0e0e0 2px;
+    border-bottom: solid #e0e0e0 2px;
+    border-left: solid #e0e0e0 2px;
+    border-radius: 60px;
+    width: 59%;
+    height: 18%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(355deg, #4a4a9e 0%, #9356dc 10%, #ff79da 100%);
+    color:white;
+    box-shadow: 4px 4px 20px #c9c9c9;
+}
+@media screen and (min-width:768px)
+{
+    .explorer
+    {
+        width:39%;
+    }
+}
+
+.explorer:hover
+{
+    transform: scale(1.05);
+    opacity:0.5;
+}
+@media screen and (min-width:768px)
+{
+    .explorer:hover
+    {
+        transform: scale(1.05);
+        opacity:0.5;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .explorer:hover
+    {
+        transform: scale(1.05);
+        opacity:0.5;
+    }
+}
+
+
+.fonctionnement
+{
+    font-size:21px;
+}
+@media screen and (min-width:768px)
+{
+    .fonctionnement
+    {
+        display:flex;
+        justify-content: center;
+        width: 92%;
+    }
+}
+
+
+.fonction
+{
+    padding-left: 5%;
+    padding-top: 6%;
+    padding-bottom: 15%;
+}
+@media screen and (min-width:768px)
+{
+    .fonction
+    {
+        padding-bottom:5%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .fonction
+    {
+        padding-top:2%;
+    }
+}
+
+
+.restau
+{
+    display:flex;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    width: 90%;
+    height: 64px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:10px;
+    box-shadow: 0 0.3rem 1rem #bdbdbd;
+}
+@media screen and (min-width:992px)
+{
+    .restau
+    {
+        margin-left:inherit;
+        width:30%;
+    }
+}
+
+.restau:hover
+{
+   background-color:#9356dc26;
+}
+
+.container-fonction
+{
+    display:flex;
+    align-items: center;
+    padding-top: 12px;
+}
+@media screen and (min-width:768px)
+{
+    .container-fonction
+    {
+        padding-top:18px;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .container-fonction
+    {
+        flex-direction: column;
+    }
+}
+
+
+.numero
+{
+    display:flex;
+    align-items: center;
+    color: white;
+    background-color: #9356dc;
+    width: 21px;
+    height: 21px;
+    padding-top: 1.6px;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: space-around;
+    position: absolute;
+}
+@media screen and (min-width:992px)
+{
+    .numero
+    {
+        padding:3px;
+        position: inherit;
+    }
+}
+
+
+
+.choixrestau
+{
+    padding-right: 45px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+.mobileicon
+{
+    color: #555454;
+}
+
+.mobileicon:hover
+{
+    color: #9356dc;
+}
+
+
+.container-compo
+{
+    display:flex;
+    align-items: center;
+    padding-top: 24px;
+}
+@media screen and (min-width:768px)
+{
+    .container-compo
+    {
+        padding-top:35px;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .container-compo
+    {
+        flex-direction: column;
+    }
+}
+
+
+
+.listicon
+{
+    color: #555454;
+}
+
+.listicon:hover
+{
+    color: #9356dc;
+}
+
+
+.comporestau
+{
+    padding-right: 58px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.restaurant 
+{
+    background-color: #f2f2f2;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%;
+}
+@media screen and (min-width:992px)
+{
+    .restaurant
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom:10%;
+    }
+}
+
+
+.restaumenu
+{
+    position: relative;
+    background-color:white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@media screen and (min-width:992px)
+{
+    .restaumenu
+    {
+        background-color:inherit;
+        width:60%;
+        margin-top: 5%;
+    }
+}
+
+.restaumenu:hover
+{
+    transform: scale(1.05);
+}
+@media screen and (min-width:992px)
+{
+    .restaumenu:hover
+    {
+        transform: scale(1.05);
+    }
+}
+@media screen and (min-width:768px)
+{
+    .restaumenu:hover
+    {
+        transform: scale(1.05);
+    }
+}
+
+
+.imagejay
+{
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 6%;
+}
+
+
+.titrerestaurant
+{
+    font-size:21px;
+    padding-top: 15%;
+}
+@media screen and (min-width:992px)
+{
+    .titrerestaurant
+    {
+        padding-top:5%;
+    }
+}
+
+
+.imagerestaurant
+{
+    height:180px;
+    width:100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.menu1
+{
+    display:flex;
+    flex-direction: column;
+    width: 150px;
+    padding-left: 4%;
+    height: 60px;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+@media screen and (min-width:992px)
+{
+    .menu1
+    {
+        background-color:white;
+        width:96%;
+    }
+}
+
+
+.plat1
+{
+    margin:0;
+    font-size: 18px;
+}
+
+.coeur 
+{
+    position: absolute;
+    right: 45px;
+    bottom: 60px;
+    cursor:initial;
+}
+/*
+.coeur:hover
+{
+    animation-name : full ;
+    animation-delay : 2s;
+    animation-duration : 3s;
+    animation-iteration-count : infinite;
+    background: coral;
+}
+
+@keyframes full {
+    0% {
+        background:coral;
+        }
+        25% {
+        background:darksalmon;
+        }
+        50% {
+        background:indianred;
+        }
+        75% {
+        background:lightcoral;
+        }
+        100% {
+        background:darksalmon;
+        }
+  }
+*/
+.new
+{
+    border-radius: 0.15em;
+    background-color: #99E2D0;
+    color: #008766;
+    font-weight: bold;
+    position: absolute;
+    font-size: 14px;
+    right: 1em;
+    top: 1em;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+@media screen and (min-width:992px)
+{
+    .new
+    {
+        top:60px;
+    }
+}
+
+footer
+{
+    background-color: #353535;
+    color: white;
+    transition: color 250ms linear;
+    padding-left: 7.5%;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px)
+{
+    footer
+    {
+        padding-bottom:6%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    footer
+    {
+        padding-bottom:2%;
+    }
+}
+
+.linkn1
+{
+    font-size:20px;
+    font-family:"Shrikhand";
+}
+
+
+footer ul li
+{
+    padding-bottom: 7.5px;
+    list-style-type: none;
+}
+
+footer ul
+{
+    padding:0;
+    margin: 0;
+}
+
+.linkn2
+{
+    padding-left: 3.5%;
+}
+@media screen and (min-width:992px)
+{
+    .linkn2
+    {
+        padding-left:1%;
+    }
+}
+
+.linkn3
+{
+    padding-left: 3.5%;
+}
+@media screen and (min-width:992px)
+{
+    .linkn3
+    {
+        padding-left:1%;
+    }
+}
+
