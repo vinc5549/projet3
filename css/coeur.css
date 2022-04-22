@@ -1,0 +1,18 @@
+.fa-heart:hover::before {
+  animation: full 350ms ease-in-out forwards alternate;
+}
+
+@keyframes full {
+  30% {
+    opacity: 0;
+  }
+  100% {
+    background: #4a4a9e;
+    background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    opacity: 1;
+  }
+}
