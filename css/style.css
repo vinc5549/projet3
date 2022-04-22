@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", "Shrikhand";
-  cursor: pointer;
 }
 
 img {
@@ -12,6 +11,183 @@ a {
   text-decoration: none;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  transition: color 250ms linear;
+  padding-left: 7.5%;
+  padding-bottom: 10%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-bottom: 6%;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    padding-bottom: 2%;
+  }
+}
+.linkn1 {
+  font-size: 20px;
+  font-family: "Shrikhand";
+}
+
+footer ul li {
+  padding-bottom: 7.5px;
+  list-style-type: none;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.linkn2 {
+  padding-left: 3.5%;
+}
+
+@media screen and (min-width: 768px) {
+  .linkn2 {
+    padding-left: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .linkn2 {
+    padding-left: 1%;
+  }
+}
+.linkn3 {
+  padding-left: 3.5%;
+}
+
+@media screen and (min-width: 768px) {
+  .linkn3 {
+    padding-left: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .linkn3 {
+    padding-left: 1%;
+  }
+}
+body {
+  font-family: "Roboto", "Shrikhand";
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.loader {
+  background: #555454;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidde-loader 800ms 3000ms forwards;
+  position: absolute;
+}
+
+@keyframes hidde-loader {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+.loader span {
+  color: #99E2D0;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flash 1.2s linear infinite;
+  font-family: "Shrikhand";
+}
+
+@media screen and (min-width: 768px) {
+  .loader span {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    background: #9356dc;
+    color: #99E2D0;
+    margin: 0 10px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash 1.2s linear infinite;
+    font-family: "Shrikhand";
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #9356dc;
+    color: #99E2D0;
+    margin: 0 10px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash 1.2s linear infinite;
+    font-family: "Shrikhand";
+  }
+}
+@keyframes flash {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
+.fa-heart:hover::before {
+  animation: full 350ms ease-in-out forwards alternate;
+}
+
+@keyframes full {
+  30% {
+    opacity: 0;
+  }
+  100% {
+    background: #4a4a9e;
+    background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    opacity: 1;
+  }
+}
+img {
+  object-fit: cover;
+}
+
 .container-logo {
   display: flex;
   justify-content: center;
@@ -19,6 +195,20 @@ a {
   padding-top: 10px;
 }
 
+.hidden-index {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  animation: display-index 100ms 3000ms linear forwards;
+}
+
+@keyframes display-index {
+  100% {
+    visibility: visible;
+    height: 100%;
+    overflow: hidden;
+  }
+}
 .logo {
   height: 22px;
 }
@@ -162,14 +352,14 @@ a {
   height: 64px;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 10px;
   box-shadow: 0 0.3rem 1rem #bdbdbd;
 }
 
 @media screen and (min-width: 992px) {
   .restau {
-    margin-left: inherit;
     width: 30%;
+    margin-left: inherit;
+    justify-content: space-evenly;
   }
 }
 .restau:hover {
@@ -189,7 +379,8 @@ a {
 }
 @media screen and (min-width: 992px) {
   .container-fonction {
-    flex-direction: column;
+    justify-content: center;
+    width: 95%;
   }
 }
 .numero {
@@ -197,19 +388,22 @@ a {
   align-items: center;
   color: white;
   background-color: #9356dc;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 23px;
   padding-top: 1.6px;
   border-radius: 100%;
   text-align: center;
   justify-content: space-around;
-  position: absolute;
+  position: relative;
+  left: 12px;
 }
 
 @media screen and (min-width: 992px) {
   .numero {
     padding: 3px;
-    position: inherit;
+    left: 10px;
+    width: 21px;
+    height: 21px;
   }
 }
 .choixrestau {
@@ -239,7 +433,8 @@ a {
 }
 @media screen and (min-width: 992px) {
   .container-compo {
-    flex-direction: column;
+    justify-content: center;
+    width: 95%;
   }
 }
 .listicon {
@@ -349,39 +544,21 @@ a {
 
 .coeur {
   position: absolute;
-  right: 45px;
+  right: 15%;
   bottom: 60px;
+  font-size: 18px;
   cursor: initial;
 }
 
-/*
-.coeur:hover
-{
-    animation-name : full ;
-    animation-delay : 2s;
-    animation-duration : 3s;
-    animation-iteration-count : infinite;
-    background: coral;
-}
-
-@keyframes full {
-    0% {
-        background:coral;
-        }
-        25% {
-        background:darksalmon;
-        }
-        50% {
-        background:indianred;
-        }
-        75% {
-        background:lightcoral;
-        }
-        100% {
-        background:darksalmon;
-        }
+@media screen and (min-width: 992px) {
+  .coeur {
+    position: absolute;
+    right: 12%;
+    bottom: 75px;
+    font-size: 18px;
+    cursor: initial;
   }
-*/
+}
 .new {
   border-radius: 0.15em;
   background-color: #99E2D0;
@@ -400,59 +577,5 @@ a {
 @media screen and (min-width: 992px) {
   .new {
     top: 60px;
-  }
-}
-footer {
-  background-color: #353535;
-  color: white;
-  transition: color 250ms linear;
-  padding-left: 7.5%;
-  padding-bottom: 10%;
-  padding-top: 2%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    padding-bottom: 6%;
-  }
-}
-@media screen and (min-width: 992px) {
-  footer {
-    padding-bottom: 2%;
-  }
-}
-.linkn1 {
-  font-size: 20px;
-  font-family: "Shrikhand";
-}
-
-footer ul li {
-  padding-bottom: 7.5px;
-  list-style-type: none;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-}
-
-.linkn2 {
-  padding-left: 3.5%;
-}
-
-@media screen and (min-width: 992px) {
-  .linkn2 {
-    padding-left: 1%;
-  }
-}
-.linkn3 {
-  padding-left: 3.5%;
-}
-
-@media screen and (min-width: 992px) {
-  .linkn3 {
-    padding-left: 1%;
   }
 }
