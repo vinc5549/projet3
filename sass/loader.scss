@@ -1,15 +1,14 @@
-@import 'variables.scss';
-
 .loader
 {
     background:$textsymbol;
-    width: 100%;
+    width: 100vw;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     animation: hidde-loader 800ms 3000ms forwards;
     position:absolute;
+    z-index:7;
 }
 @keyframes hidde-loader
 {
