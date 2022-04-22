@@ -93,6 +93,7 @@ main
     right: 18%;
     padding-top: 5%;
     font-size: 120%;
+    cursor:pointer;
 }
 @media screen and (min-width:768px)
 {
@@ -214,55 +215,10 @@ main
         width: 550px;
     }
 }
-
-.n1
-{
-    animation-delay: 153.8461538462ms;
-}
-
-.n2 
-{
-    animation-delay: 230.7692307692ms;
-}
-
-.n3
-{
-    animation-delay: 307.6923076923ms;
-}
-
-.n4
-{
-    animation-delay: 384.6153846154ms;
-}
-
-.n5
-{
-    animation-delay: 461.5384615385ms;
-}
-
-.n6
-{
-    animation-delay: 538.4615384615ms;
-}
-
-.n7
-{
-    animation-delay: 615.3846153846ms;
-}
-
-.n8
-{
-    animation-delay: 769.2307692308ms;
-}
-
-.n9
-{
-    animation-delay: 846.1538461538ms;
-}
-
-.n10
-{
-    animation-delay: 923.0769230769ms;
+@for $i from 1 through 10 {
+    .n#{$i} {
+        animation-delay: 0.1s * $i;
+    }
 }
 
 
@@ -415,6 +371,7 @@ main
     background: linear-gradient(355deg, #4a4a9e 0%, #9356dc 10%, #ff79da 100%);
     color:$whitefont;
     box-shadow: 4px 4px 20px #c9c9c9;
+    cursor:pointer;
 }
 .commander:hover
 {
