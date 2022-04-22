@@ -1,0 +1,82 @@
+footer
+{
+    background-color: #353535;
+    color: white;
+    transition: color 250ms linear;
+    padding-left: 7.5%;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px)
+{
+    footer
+    {
+        padding-bottom:6%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    footer
+    {
+        padding-bottom:2%;
+    }
+}
+
+.linkn1
+{
+    font-size:20px;
+    font-family:"Shrikhand";
+}
+
+
+footer ul li
+{
+    padding-bottom: 7.5px;
+    list-style-type: none;
+}
+
+footer ul
+{
+    padding:0;
+    margin: 0;
+}
+
+.linkn2
+{
+    padding-left: 3.5%;
+}
+@media screen and (min-width:768px)
+{
+    .linkn2
+    {
+        padding-left:1%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .linkn2
+    {
+        padding-left:1%;
+    }
+}
+
+.linkn3
+{
+    padding-left: 3.5%;
+}
+@media screen and (min-width:768px)
+{
+    .linkn3
+    {
+        padding-left:1%;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .linkn3
+    {
+        padding-left:1%;
+    }
+}
