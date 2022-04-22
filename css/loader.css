@@ -1,0 +1,91 @@
+body {
+  font-family: "Roboto", "Shrikhand";
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.loader {
+  background: #555454;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidde-loader 800ms 3000ms forwards;
+  position: absolute;
+}
+
+@keyframes hidde-loader {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+.loader span {
+  color: #99E2D0;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: flash 1.2s linear infinite;
+  font-family: "Shrikhand";
+}
+
+@media screen and (min-width: 768px) {
+  .loader span {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    background: #9356dc;
+    color: #99E2D0;
+    margin: 0 10px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash 1.2s linear infinite;
+    font-family: "Shrikhand";
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #9356dc;
+    color: #99E2D0;
+    margin: 0 10px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flash 1.2s linear infinite;
+    font-family: "Shrikhand";
+  }
+}
+@keyframes flash {
+  0% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7px #99E2D0;
+  }
+}
