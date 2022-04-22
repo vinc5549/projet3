@@ -1,0 +1,12 @@
+body {
+  font-family: "Roboto", "Shrikhand";
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
